@@ -235,9 +235,57 @@ td, th {
 
 .imagem-beneficios {
 	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px #000000;
+}
+
+.imagem-beneficios:hover{
+	opacity: 0.3;
 }
 
 .video {
 	width: 560px;
 	margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal,.conteudo-beneficios, .mapa-conteudo, .video, .produtos, form{
+		width: auto;
+	}
+
+	.video{
+		margin-left: 10%;
+	}
+
+	h1{
+		text-align: center;
+	}
+	nav{
+		position: static;
+		text-align: center;
+	}
+	.lista-beneficios, .imagem-beneficios{
+		width: 100%;
+	}
+
+	.produtos li{
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		width: 90%;
+	
+	}
+
+	form p{
+		width: auto;
+	}
+
+	.checkbox{
+		width: 90%;
+	}
+
+	.input-padrao{
+		width: 70%;
+	}
 }
